@@ -1,0 +1,11 @@
+article>div{
+    flex-direction: column;
+}
+
+#hebergements, #populaires{
+    width: 94%;
+}
+
+#populaires{
+    margin-top: 30px;
+}
