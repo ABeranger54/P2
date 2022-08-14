@@ -1,0 +1,115 @@
+header{
+    width: 100%;
+}
+
+#header-top{
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-top>nav{
+    width: 100%;
+}
+
+#header-top>nav>a{
+    width: 100%;
+}
+
+#header-top>nav>a>ul{
+    width: auto;
+}
+
+#nav-selected{
+    border-top: none;
+    border-bottom: 2px solid #0065FC;
+}
+
+header>h1, header>p, header>form, header>i, header>nav, #activites{
+    margin: 0 15px;
+}
+
+header>h1{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+header>nav{
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+header>form>button{
+    display: inline-block;
+    border-radius: 10px;
+    border: 0;
+}
+
+header>form{
+    display: block;
+}
+
+header>form>div{
+    width: 89%;
+}
+
+header>form>div>input[type=text]{
+    width: 83%;
+}
+
+header>form>input[type=submit]{
+    display: none;
+}
+
+header>nav>strong{
+    width: 100%;
+    line-height: 40px;
+}
+
+header>nav>ul{
+    margin: 0 10px 10px 0;
+}
+
+article{
+    margin: 0;
+    width: 100%;
+}
+
+article>div{
+    flex-direction: column-reverse;
+}
+
+#hebergements{
+    background-color: transparent;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+#hebergements>div{
+    width: auto;
+}
+
+#populaires{
+    padding-left: 15px;
+    border-radius: 0;
+}
+
+#activites-tile-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.activites-tile{
+    height: 200px;
+}
+
+.activites-tile>img{
+    height: 76% !important;
+}
+
+footer{
+    flex-direction: column;
+}
+
+footer>div{
+    width: 100%;
+}
