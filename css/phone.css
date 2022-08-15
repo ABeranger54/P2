@@ -11,12 +11,17 @@ header{
     width: 100%;
 }
 
-#header-top>nav>a{
+#header-top>nav>ul{
+    width: 100%;
+    padding: 0;
+}
+
+#header-top>nav>ul>li>a{
     width: 100%;
 }
 
-#header-top>nav>a>ul{
-    width: auto;
+#header-top>nav>ul>li{
+    width: 100%;
 }
 
 #nav-selected{
@@ -35,13 +40,21 @@ header>h1{
 
 header>nav{
     flex-wrap: wrap;
-    margin-bottom: 20px;
 }
 
-header>form>button{
-    display: inline-block;
-    border-radius: 10px;
-    border: 0;
+header>nav>ul{
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+header>nav>strong{
+    width: 100%;
+    line-height: 40px;
+}
+
+header>nav>ul>li{
+    margin: 0 10px 10px 0;
 }
 
 header>form{
@@ -60,13 +73,10 @@ header>form>input[type=submit]{
     display: none;
 }
 
-header>nav>strong{
-    width: 100%;
-    line-height: 40px;
-}
-
-header>nav>ul{
-    margin: 0 10px 10px 0;
+header>form>button{
+    display: inline-block;
+    border-radius: 10px;
+    border: 0;
 }
 
 article{
@@ -82,6 +92,7 @@ article>div{
     background-color: transparent;
     flex-direction: column;
     padding-left: 15px;
+    
 }
 
 #hebergements>div{
@@ -91,6 +102,10 @@ article>div{
 #populaires{
     padding-left: 15px;
     border-radius: 0;
+}
+
+#activites{
+    margin-top: 25px;
 }
 
 #activites-tile-container{

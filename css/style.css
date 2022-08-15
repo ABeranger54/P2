@@ -2,6 +2,7 @@ body{
     font-family: Raleway, serif;
     box-sizing: border-box;
     margin: 0;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -27,22 +28,28 @@ header{
 /* Nav */
 
 #header-top>nav{
-    display: flex;
     font-size: 14px;
     font-weight: bold;
 }
 
-#header-top>nav>a{
-    text-decoration: none;
+#header-top>nav>ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
 }
 
-#header-top>nav>a>ul{
+#header-top>nav>ul>li{
     margin: 0;
     padding: 0 10px;
     line-height: 70px;
     width: 100px;
     text-align: center;
+}
+
+#header-top>nav>ul>li>a{
+    text-decoration: none;
     color: black;
+    display: block;
 }
 
 header>h1{
@@ -112,12 +119,17 @@ header>nav{
     display: flex;
 }
 
+header>nav>ul{
+    display: flex;
+    list-style-type: none;
+}
+
 header>nav>strong{
     font-size: 14px;
     line-height: 60px;
 }
 
-header>nav>ul{
+header>nav>ul>li{
     border: 2px solid #e3e3e3;
     margin-left: 20px;
     padding-left : 0;
@@ -129,12 +141,12 @@ header>nav>ul{
     transition: 0.3s
 }
 
-header>nav>ul:hover{
+header>nav>ul>li:hover{
     background-color: #F2F2F2;
     border: 2px solid #0065FC;
 }
 
-header>nav>ul>i{
+header>nav>ul>li>i{
     background-color: #DEEBFF;
     padding: 10px 10px;
     border-radius: 20px;
