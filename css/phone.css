@@ -1,4 +1,9 @@
-header{
+header,
+#header-top>nav,
+#header-top>nav>ul>li,
+#header-top>nav>ul>li>a,
+footer>div
+{
     width: 100%;
 }
 
@@ -7,21 +12,9 @@ header{
     align-items: center;
 }
 
-#header-top>nav{
-    width: 100%;
-}
-
 #header-top>nav>ul{
     width: 100%;
     padding: 0;
-}
-
-#header-top>nav>ul>li>a{
-    width: 100%;
-}
-
-#header-top>nav>ul>li{
-    width: 100%;
 }
 
 #nav-selected{
@@ -29,7 +22,7 @@ header{
     border-bottom: 2px solid #0065FC;
 }
 
-header>h1, header>p, header>form, header>i, header>nav, #activites{
+header>h1, header>p, #search, header>i, #filters, #activites{
     margin: 0 15px;
 }
 
@@ -38,42 +31,42 @@ header>h1{
     margin-top: 20px;
 }
 
-header>nav{
+#filters{
     flex-wrap: wrap;
 }
 
-header>nav>ul{
+#filters>ul{
     flex-wrap: wrap;
     margin-bottom: 20px;
     padding: 0;
 }
 
-header>nav>strong{
+#filters>strong{
     width: 100%;
     line-height: 40px;
 }
 
-header>nav>ul>li{
+#filters>ul>li{
     margin: 0 10px 10px 0;
 }
 
-header>form{
+#search{
     display: block;
 }
 
-header>form>div{
+#search>div{
     width: 89%;
 }
 
-header>form>div>input[type=text]{
+#search>div>input[type=text]{
     width: 83%;
 }
 
-header>form>input[type=submit]{
+#search>input[type=submit]{
     display: none;
 }
 
-header>form>button{
+#search>button{
     display: inline-block;
     border-radius: 10px;
     border: 0;
@@ -123,8 +116,4 @@ article>div{
 
 footer{
     flex-direction: column;
-}
-
-footer>div{
-    width: 100%;
 }

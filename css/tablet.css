@@ -1,3 +1,7 @@
+#filters>ul{
+    padding-left: 10px;
+}
+
 article>div{
     flex-direction: column;
 }
